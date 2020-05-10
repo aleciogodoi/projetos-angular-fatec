@@ -1,0 +1,11 @@
+<h2>Cursos</h2>
+<p>
+    Curso <input type="text" [(ngModel)]="curso">
+    <input type="button" value="Incluir" (click)="novoCurso(curso)">
+    <input type="button" value="Excluir" (click)="excluiCurso(curso)">
+</p>
+<ul>
+    <li *ngFor="let item of cursos">
+        {{item}}
+    </li>
+</ul>

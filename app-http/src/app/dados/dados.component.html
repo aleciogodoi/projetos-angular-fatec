@@ -1,0 +1,23 @@
+<br><br>
+<div class="container"> 
+    <table class="table w-auto small table-dark table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>User Name</th>
+          <th>Fone</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let pessoa of dados">
+              <td>{{pessoa.id}}</td>
+              <td>{{pessoa.name}}</td>
+              <td>{{pessoa.email | lowercase}}  </td>
+              <td>{{pessoa.username }}  </td>
+              <td>{{pessoa.phone}}</td>
+          </tr>
+      </tbody>
+    </table>
+</div>

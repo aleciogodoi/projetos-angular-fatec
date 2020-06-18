@@ -1,0 +1,58 @@
+{
+  "cursos": [
+    {
+      "id": 1,
+      "descricao": "JAVA Básico",
+      "duracao": 20,
+      "preco": "100.55"
+    },
+    {
+      "id": 2,
+      "descricao": "C#",
+      "duracao": 20,
+      "preco": 250.49
+    },
+    {
+      "id": 3,
+      "descricao": "SQL",
+      "duracao": 40,
+      "preco": 420.39
+    },
+    {
+      "id": 4,
+      "descricao": "Javascript",
+      "duracao": 25,
+      "preco": 189.9
+    },
+    {
+      "id": 5,
+      "descricao": "C++",
+      "duracao": 60,
+      "preco": 530.79
+    },
+    {
+      "id": 6,
+      "descricao": "CSS",
+      "duracao": 15,
+      "preco": 110.29
+    },
+    {
+      "id": 7,
+      "descricao": "Cobol",
+      "duracao": 40,
+      "preco": 455.29
+    },
+    {
+      "descricao": "Python",
+      "duracao": 20,
+      "preco": 231.89,
+      "id": 8
+    },
+    {
+      "descricao": "JAVA Intermediário",
+      "duracao": "30",
+      "preco": "220.32",
+      "id": 9
+    }
+  ]
+}

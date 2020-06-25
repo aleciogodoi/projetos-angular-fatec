@@ -15,6 +15,8 @@ import { CursoUpdateComponent } from './components/curso/curso-update/curso-upda
 import { CursoDeleteComponent } from './components/curso/curso-delete/curso-delete.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

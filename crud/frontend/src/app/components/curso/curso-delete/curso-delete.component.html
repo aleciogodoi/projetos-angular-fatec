@@ -1,1 +1,23 @@
-<p>curso-delete works!</p>
+<mat-card>
+    <mat-card-title>Excluir Curso</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Descrição" 
+                name="descricao" [value]="curso.descricao" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Duração" 
+                name="duracao" [value]="curso.duracao" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço R$" 
+                name="preco" [value]="curso.preco" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteCurso()" color="warn">
+        Excluir
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-curso-delete',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursoDeleteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  deleteCurso(){
+
+  }
+
+  cancel(){
+    this.router.navigate(['/cursos']);
   }
 
 }

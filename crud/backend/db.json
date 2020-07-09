@@ -53,6 +53,12 @@
       "duracao": "30",
       "preco": "220.32",
       "id": 9
+    },
+    {
+      "descricao": "Java Avançado",
+      "duracao": "48",
+      "preco": "351.89",
+      "id": 11
     }
   ]
 }

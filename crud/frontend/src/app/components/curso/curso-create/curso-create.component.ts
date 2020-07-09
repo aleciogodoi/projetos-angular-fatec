@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CursoService } from '../curso.service';
+import { Curso } from './../../curso.modelo';
 
 @Component({
   selector: 'app-curso-create',
@@ -8,13 +10,22 @@ import { Router } from '@angular/router';
 })
 export class CursoCreateComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  curso: Curso = {
+    descricao: null,
+    duracao: null,
+    preco: null
+  }
+
+  constructor(private router:Router, private cursoService: CursoService) { }
 
   ngOnInit() {
   }
 
-  createCurso() {
-    this.router.navigate(['/cursos']);
+  createCurso(): void {
+    this.cursoService.create(this.curso).subscribe( () => {
+      this.cursoService.showMessage("Curso Criado!");
+      this.router.navigate(['/cursos']);
+    })
   }
 
   cancel() {

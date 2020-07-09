@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+import { CursoService } from '../curso.service';
+import { Curso } from './../../curso.modelo';
 
 @Component({
   selector: 'app-curso-delete',
@@ -8,13 +10,21 @@ import { Router } from '@angular/router';
 })
 export class CursoDeleteComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  curso: Curso;
+  constructor(private router: Router, private cursoService: CursoService, private route: ActivatedRoute ) { }
 
   ngOnInit() {
+    const id = this.route.snapshot.paramMap.get("id");
+    this.cursoService.readById(id).subscribe( curso => {
+      this.curso = curso;
+    });
   }
 
   deleteCurso(){
-
+    this.cursoService.delete(''+this.curso.id).subscribe(() => {
+      this.cursoService.showMessage("Curso Excluido!");
+      this.router.navigate(['/cursos']);
+    });
   }
 
   cancel(){

@@ -59,6 +59,12 @@
       "duracao": "48",
       "preco": "351.89",
       "id": 11
+    },
+    {
+      "descricao": "MySQL Avançado",
+      "duracao": "30",
+      "preco": "300.65",
+      "id": 12
     }
   ]
 }

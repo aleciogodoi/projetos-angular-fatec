@@ -1,15 +1,17 @@
 <mat-toolbar class="header mat-elevation-z4">
     <span>
-        <a>
-            <img class="logo" src="assets/img/logo.jpg" alt="Logo Fatec">
-        </a>
-    </span>
-    <span class="title-group">
         <a routerLink="/">
-            <i class="material-icons">
-                home
-            </i>
-            Home
+            <img class="logo" src="assets/img/logo.jpg" alt="logo">
         </a>
     </span>
+
+    <span class="title-group">
+        <a routerLink="{{ routerUrl }}">
+            <i class="material-icons">
+                {{icon}}
+            </i>
+            {{title}}
+        </a>
+    </span>
+
 </mat-toolbar>
